@@ -1,3 +1,3 @@
-print("Hello World")
-
-print("Hello Git")
+ім_я = input("Введіть ваше ім'я: ")
+вітання = f"Привіт, {ім_я}!"
+print(вітання)
