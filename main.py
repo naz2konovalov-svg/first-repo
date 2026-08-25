@@ -1,23 +1,19 @@
-inventory = ["кирка", "земля", "алмаз", "земля", "дерево"]
-inventory.append("меч")
-print(f"Весь инвентарь: {inventory}")
+items_for_sale = ["Polo Ralph Lauren", "Burberry", "New Rock", "Burberry", "Nike"]
+print(f"Items for sale: {items_for_sale}")
 
-unique_items = set(inventory)
-print(f"Уникальные ресурсы: {unique_items}")
+unique_brands = set(items_for_sale)
+print(f"Brands: {unique_brands}")
 
-hotbar = inventory[0:3]
-print(f"Быстрый доступ: {hotbar}")
-
-player_stats = {
-    "name": "Nazar",
-    "level": 16,
-    "health": 100
+jacket_details = {
+    "brand": "Polo Ralph Lauren",
+    "size": "M",
+    "price": 500
 }
 
-weapon = player_stats.get("weapon", "Оружие не найдено")
-print(f"Статус оружия: {weapon}")
+price = jacket_details.get("price")
+print(f"Price: {price}")
 
-chat_message = "   ВНИМАНИЕ! КРИПЕР СЗАДИ!   "
+clients_message = "How much?"
 
-clean_message = chat_message.strip().lower()
-print(f"Чат гильдии: {clean_message}")
+clean_clients_message = clients_message.strip().lower()
+print(f"Clients message: {clean_clients_message}")
