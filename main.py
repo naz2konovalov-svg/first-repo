@@ -1,19 +1,16 @@
-items_for_sale = ["Polo Ralph Lauren", "Burberry", "New Rock", "Burberry", "Nike"]
-print(f"Items for sale: {items_for_sale}")
+visited_cities = ["Seville", "Malaga", "Zagreb", "Malaga"]
 
-unique_brands = set(items_for_sale)
-print(f"Brands: {unique_brands}")
+unique_cities = set(visited_cities)
+print (f"Visited cities: {unique_cities}")
 
-jacket_details = {
-    "brand": "Polo Ralph Lauren",
-    "size": "M",
-    "price": 500
+zagreb_expenses = {
+    "food": 10,
+    "transport": 20,
+    "souvenirs": 20
 }
 
-price = jacket_details.get("price")
-print(f"Price: {price}")
+user_request = input("Enter expense category: ")
+clean_user_request = user_request.strip().lower()
 
-clients_message = "How much?"
-
-clean_clients_message = clients_message.strip().lower()
-print(f"Clients message: {clean_clients_message}")
+expense_ammount = zagreb_expenses.get(clean_user_request, "No data")
+print (f"Amount for {clean_user_request}: {expense_ammount}")
